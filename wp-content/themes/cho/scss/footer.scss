@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  padding: 1rem 0;
+  margin-top: 4rem;
+  justify-content: center;
+  .footer-left {
+    width: 50%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .social-icons {
+      display: flex;
+      margin-bottom: 1rem;
+      .icon-container {
+        max-height: 40px;
+        width: 40px;
+        margin-right: 1rem;
+        display: flex;
+        a {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    .telephone .tel-number {
+      font-weight: bold;
+    }
+  }
+  .footer-right {
+    width: 50%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+*.sass-cache*
+*.DS_Store*
+.idea/*
+.idea
+workspace.xml
+*.htaccess
+wp-config.php
+*.log*
+node_modules/
+**/node_modules/
+*.swp
+wp-content/cache/
+wp-content/themes/wflogs/
+wp-content/wflogs/*
+wp-content/wflogs/config.php
+wp-content/mu-plugins/

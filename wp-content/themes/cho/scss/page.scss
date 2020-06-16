@@ -1,0 +1,107 @@
+.section {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  // border: 1px solid black;
+  @media screen and (max-width: $bp-desktop) {
+  }
+  .section-content {
+    .section-title {
+      font-family: Noto-Sans-Bold;
+      font-size: 2rem;
+      background-color: $section-title-bg;
+      color: white;
+      padding: 1rem;
+      border: 1px solid $section-border;
+    }
+    .section-desc {
+      background-color: $section-bg;
+      color: $section-font;
+      padding: 1rem;
+      margin: 2rem 0;
+      border: 1px solid $section-border;
+      line-height: 2.2rem;
+    }
+    .links-container {
+      display: flex;
+      justify-content: space-between;
+      height: fit-content;
+      @media screen and (max-width: $bp-desktop) {
+        // flex-direction: column;
+      }
+      .section-link {
+        font-weight: bold;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 240px;
+        background: grey;
+        padding: 1rem;
+        @media screen and (max-width: $bp-desktop) {
+          width: 200px;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.img-container {
+  margin-top: -4rem;
+  width: 360px;
+  .section-img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.welcome {
+  max-height: 590px;
+  .welcome-content {
+    max-width: 65%;
+  }
+  .welcome-img {
+    .section-img {
+      margin-top: -2rem;
+    }
+  }
+}
+
+.bio {
+  flex-direction: row-reverse;
+  @media screen and (max-width: $bp-desktop) {
+    flex-direction: column;
+  }
+  .bio-content {
+    max-width: 65%;
+    @media screen and (max-width: $bp-desktop) {
+      max-width: 90%;
+    }
+    .section-title {
+      text-align: right;
+      @media screen and (max-width: $bp-desktop) {
+        text-align: left;
+      }
+    }
+  }
+  .bio-img {
+    margin-left: -9rem;
+    width: inherit;
+    @media screen and (max-width: $bp-desktop) {
+      margin-left: 0;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.footer {
+  background-color: $nav-bg;
+  height: 200px;
+  color: white;
+  padding: 0 1rem 0 1rem;
+}
